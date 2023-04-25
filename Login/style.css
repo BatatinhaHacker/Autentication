@@ -85,7 +85,6 @@ background: #9FBBFB;
     
 }
 
-
 /* não incluir no partial */
 
 .login-title {
@@ -138,6 +137,7 @@ background: #9FBBFB;
 }
 
 .div-container {
+    height: 25%;
     display: flex;
 }
 
@@ -186,7 +186,7 @@ background: #9FBBFB;
 }
 
 .label-reset-password > a {
-    margin-left: 40%;
+    margin-left: 43%;
     margin-bottom: 18%;
     color: #9FB3FD;
 }
@@ -195,8 +195,53 @@ background: #9FBBFB;
     width: 100%;
     height: 30%;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.5em;
+    border-radius: 5px;
     border: none;
     background-color: #6788FF;
     color: #FFFF;
+    margin-bottom: 7.5%;
+}
+
+.label-create-account {
+    width: 50%;
+    margin-left: 16%;
+}
+
+.span-create-account {
+    font-size: 1.1em;
+    color: #474866;
+}
+
+.label-create-account > a {
+    margin: 2%;
+    font-size: 1.1em;
+    margin-bottom: 18%;
+    color: #9FB3FD;
+}
+
+.div-title {
+    position: absolute;
+    left: 25%;
+    top: 12%;
+    width: 60%;
+}
+
+.title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5em;
+    line-height: 104px;
+    
+    color: #FFFFFF;
+}
+
+.subtitle {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2em;
+    line-height: 44px;
+    color: #FFFFFF;
 }
