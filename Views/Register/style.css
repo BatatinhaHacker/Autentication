@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
 body {
-    margin:0;
+    margin:0;    
 }
 
 #backgroundDiv {
@@ -85,14 +91,13 @@ background: #9FBBFB;
     
 }
 
-/* não incluir no partial */
-
 .login-title {
     position: absolute;
     top: 27%;
-    left: 31.5%;
-    color: gray;
+    left: 35%;
+    color: #5C5C78;
     font-size: 1.5em;
+    font-weight: 400;
     margin-bottom: 30px;
 }
 
@@ -132,69 +137,14 @@ background: #9FBBFB;
 
 .input::placeholder {
     font-size: medium;
-    padding: 10px;
+    padding: 35px;
     color: #C4C8D2;
 }
 
-.div-container {
-    height: 25%;
-    display: flex;
-}
-
-.login-label-checkbox {
-    width: 100%;
-    margin: 15px 0 50px;
-    font-size: 0.9em;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-}
-
-.input-checkbox {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background-color: #FFFF;
-    margin-right: 8px;
-    border-radius: 3px;
-}
-
-.input-checkbox:checked {
-    background-color: #797991;
-}
-
-.input-checkbox:checked::after {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 10px;
-    border: 3px solid white;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
-    margin: 2px 6px;
-}
-
-.span-checkbox {
-    color: #797991;
-    font-weight: 500;
-}
-
-.label-reset-password {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.label-reset-password > a {
-    margin-left: 43%;
-    margin-bottom: 18%;
-    color: #9FB3FD;
-}
-
-.btn-continue {
+.btn-register {
     width: 100%;
     height: 30%;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5em;
     border-radius: 5px;
     border: none;
@@ -203,45 +153,44 @@ background: #9FBBFB;
     margin-bottom: 7.5%;
 }
 
-.label-create-account {
-    width: 50%;
-    margin-left: 16%;
-}
-
-.span-create-account {
-    font-size: 1.1em;
-    color: #474866;
-}
-
-.label-create-account > a {
-    margin: 2%;
-    font-size: 1.1em;
-    margin-bottom: 18%;
-    color: #9FB3FD;
+.btn-register:hover {
+    background-color: #4168F9;
 }
 
 .div-title {
     position: absolute;
-    left: 25%;
+    left: 10%;
     top: 12%;
-    width: 60%;
+    width: 90%;
 }
 
 .title {
     font-family: 'Oswald';
     font-style: normal;
-    font-weight: 700;
-    font-size: 5em;
+    font-weight: 600;
+    font-size: 6em;
     line-height: 104px;
     
     color: #FFFFFF;
 }
 
-.subtitle {
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 2em;
-    line-height: 44px;
-    color: #FFFFFF;
+.login-username > img {
+    position: absolute;
+    height: 6%;
+    left: 3%;
+    top: 16.5%;
+}
+
+.login-email > img {
+    position: absolute;
+    height: 6%;
+    left: 2.5%;
+    top: 55%;
+}
+
+.login-password > img {
+    position: absolute;
+    height: 6%;
+    left: 3%;
+    top: 94%;
 }
