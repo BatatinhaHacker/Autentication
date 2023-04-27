@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="../../img/favicon-16x16.png">
-    
-  </head>
-  <body>
-    <div id="backgroundDiv">
-      <div id="backgroundDivLeft"></div>
-      <div id="backgroundDivRight">
-        <div id="upperCircle"></div>
-        <div id="lowerCircle"></div>
-      </div>
-    </div>
 
-    <div id="loginDivLeft">
-      <div class="div-title">
-        <h3 class="title">Start your journey with us.</h3>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="../../img/favicon-16x16.png">
+  <script src="script.js" defer></script>
 
+</head>
+
+<body>
+  <div id="backgroundDiv">
+    <div id="backgroundDivLeft"></div>
+    <div id="backgroundDivRight">
+      <div id="upperCircle"></div>
+      <div id="lowerCircle"></div>
+    </div>
+  </div>
+
+  <div id="loginDivLeft">
+    <div class="div-title">
+      <h3 class="title">Start your journey with us.</h3>
+    </div>
+  </div>
+  <form id="formRegister">
     <div id="loginDivRight">
       <div class="logo-container"><img src="../../img/logo.svg"></div>
       <h3 class="login-title">Create your account!</h3>
@@ -31,40 +34,27 @@
 
         <label class="login-label login-username">
           <span class="span-username">username</span>
-          <input
-            type="text"
-            name="username"
-            class="input input-username"
-            placeholder="Create your username"
-          />
+          <input type="text" name="username" class="input input-username" placeholder="Create your username" />
           <img src="../../img/user-icon.png" class="user-icon">
         </label>
 
         <label class="login-label login-email">
           <span class="span-email">email</span>
-          <input
-            type="text"
-            name="username"
-            class="input input-email"
-            placeholder="Enter your email"
-          />
-          <img src="../../img/envelope-icon.png" class="user-icon">
+          <input type="text" name="username" class="input input-email" placeholder="Enter your email" />
+          <img src="../../img/envelope-icon.png" class="envelope-icon">
         </label>
 
         <label class="login-label login-password">
           <span class="span-password">senha</span>
-          <input
-            type="password"
-            name="password"
-            class="input input-password"
-            placeholder="Enter your password"
-          />
-          <img src="../../img/lock-icon.png" class="user-icon">
+          <input type="password" name="password" class="input input-password" placeholder="Enter your password" />
+          <img src="../../img/lock-icon.png" class="lock-icon">
         </label>
 
-        <button class="btn-register">Register</button>
+        <button class="btn-register" type="button">Register</button>
 
       </div>
     </div>
-  </body>
+  </form>
+</body>
+
 </html>
