@@ -9,14 +9,31 @@ const lockIcon = document.querySelector(".lock-icon");
 
 const btnLogin = document.querySelector(".btn-continue");
 
-function validateForm() {
-    const formData = new FormData(formLogin);
-    const data = {};
-  
-    for (const [key, value] of formData.entries()) {
-        data[key] = value;
+function validateForm(e) {
+    e.preventDefault();
+
+    if(!inputEmail.value) {
+        const emailError = document.getElementById('email-error');
+        emailError.textContent = 'Please enter your email';
+        return;
     }
-    console.log(data)
+    if (!passwordInput.value) {
+        const passwordError = document.getElementById('password-error');
+        passwordError.textContent = 'Please enter your password';
+        return;
+      }
+
+    const formData = new FormData(formLogin);
+  
+    const email = formData.get('email');
+    const password = formData.get('password');
+    const remember = formData.get('remember') === 'on';
+  
+    console.log('Email:', email);
+    console.log('Password:', password);
+    console.log('Remember me:', remember);
+
+    this.submit();
 }
 
 function hideEmailImage() {
@@ -45,8 +62,6 @@ function showPasswordImage() {
     inputPassword.setAttribute('placeholder', 'Enter your password');
 }
 
-btnLogin.addEventListener('click', validateForm);
-
 inputEmail.addEventListener('focus', hideEmailImage);
 
 inputEmail.addEventListener('focusout', showEmailImage);
@@ -55,7 +70,4 @@ inputPassword.addEventListener('focus', hidePasswordImage);
 
 inputPassword.addEventListener('focusout', showPasswordImage);
 
-
-btnLogin.addEventListener('click', () => {
-    location.replace("../Register/Index.html");
-});
+formLogin.addEventListener('submit', validateForm);

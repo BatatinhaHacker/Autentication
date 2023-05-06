@@ -36,16 +36,17 @@
           <span class="span-email">email</span>
           <input type="email" name="email" class="input input-email" placeholder="Enter your email" />
           <img src="../../img/envelope-icon.png" class="envelope-icon">
+          <span class="error" id="email-error"></span>
         </label>
         <label class="login-label login-password">
           <span class="span-password">senha</span>
           <input type="password" name="password" class="input input-password" placeholder="Enter your password" />
           <img src="../../img/lock-icon.png" class="lock-icon">
+          <span class="error" id="password-error"></span>
         </label>
-
         <div class="div-container">
           <label class="login-label-checkbox">
-            <input type="checkbox" class="input-checkbox" name="cbx-remember"/>
+            <input type="checkbox" class="input-checkbox" name="remember"/>
             <span class="span-checkbox">Remember me</span>
           </label>
 
@@ -54,7 +55,7 @@
           </label>
         </div>
 
-        <button id="btnLogin" type="button" class="btn-continue">Login</button>
+        <button id="btnLogin" type="submit" class="btn-continue">Login</button>
         <label class="label-create-account">
           <span class="span-create-account">Dont have an account?</span>
           <a href="../Register/Index.html">Create Account</a>

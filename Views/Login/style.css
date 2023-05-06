@@ -268,3 +268,8 @@ background: #9FBBFB;
     top: 54%;
     left: 2%;
 }
+
+#email-error {
+    color: rgb(179, 42, 42);
+    font-size: 200;
+}
