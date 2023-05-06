@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin:0;
+}
+
+#backgroundDiv {
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#backgroundDivLeft {
+    background-color: #5C7CF2;
+    width: 50%;
+    height: 100%;
+}
+
+#backgroundDivRight {
+    background-color: #E4E8F2;
+    width: 50%;
+    height: 100%;
+}
+
+#upperCircle {
+    border-radius: 50%;
+    position: absolute;
+    width: 360px;
+    height: 35%;
+    left: 85%;
+    top: -94px;
+
+background: #9FBBFB;
+}
+
+#lowerCircle {
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    width: 430px;
+    height: 41.5%;
+    left: 80%;
+    top: 65%;
+    background: #E4E8F2;
+    border: 40px solid #9FBBFB;
+}
+
+#loginDivLeft {
+    top: 10%;
+    left: 12.5%;
+    position: absolute;
+    background-color: #5277F7;
+    width: 37.5%;
+    height: 80%; 
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0px 0px 20px;
+}
+
+#loginDivRight {
+    top: 10%;
+    right: 12.5%;
+    position: absolute;
+    background-color: #E4E8F2;
+    width: 37.5%;
+    height: 80%; 
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.logo-container {
+    height: 74px;
+    width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: absolute;
+    left: 42%;
+    top: 15.5%;
+    
+}
+
+.login-title {
+    position: absolute;
+    top: 27%;
+    left: 35%;
+    color: #5C5C78;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#loginSection {
+    height: 30%;
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.login-label {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 30%;
+}
+
+.input {
+    border-radius: 5px;
+    width: 100%;
+    height: 50%;
+    border: none;
+    outline: none;
+}
+
+.login-label > span {
+    font-size: large;
+    font: 1em;
+    cursor: text;
+    transition: all 200ms ease;
+    text-transform: capitalize;
+    color: #797991;
+    font-weight: 600;
+    margin: 8px 10px;
+}
+
+.input::placeholder {
+    font-size: medium;
+    padding: 30px;
+    color: #C4C8D2;
+}
+
+.div-container {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-back-sign-in {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.label-back-sign-in > a {
+    color: #9FB3FD;
+}
+
+.btn-send {
+    width: 100%;
+    height: 30%;
+    font-weight: 400;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    background-color: #6788FF;
+    color: #FFFF;
+    padding-left: 16px;
+}
+
+.btn-send:hover {
+    background-color: #4168F9;
+}
+
+.div-title {
+    position: absolute;
+    left: 10%;
+    top: 14%;
+    width: 60%;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6em;
+    line-height: 104px;
+    
+    color: #FFFFFF;
+}
+
+.lock-icon {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+}
+
+.lock-icon-1 {
+    position: absolute;
+    top: 54%;
+    left: 2%;
+}

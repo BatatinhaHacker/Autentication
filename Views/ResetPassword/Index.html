@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResetPassword</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="../../img/favicon-16x16.png">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div id="backgroundDiv">
+    <div id="backgroundDivLeft"></div>
+    <div id="backgroundDivRight">
+      <div id="upperCircle"></div>
+      <div id="lowerCircle"></div>
+    </div>
+  </div>
+
+  <div id="loginDivLeft">
+    <div class="div-title">
+      <h3 class="title">You fools</h3>
+    </div>
+  </div>
+
+  <div id="loginDivRight">
+    <div class="logo-container"><img src="../../img/logo.svg"></div>
+    <h3 class="login-title">Reset your Password!</h3>
+    <form id="formLogin">
+      <div id="loginSection">
+        <label class="login-label login-password">
+          <span class="span-password">new password</span>
+          <input type="password" name="password" class="input input-password" placeholder="Enter new password" />
+          <img src="../../img/lock-icon.png" class="lock-icon">
+        </label>
+
+        <label class="login-label login-password">
+            <span class="span-password">confirm password</span>
+            <input type="confirmPassword" name="confirmPassword" class="input input-password input-confirm-password" placeholder=".............." />
+            <img src="../../img/lock-icon.png" class="lock-icon-1">
+          </label>
+
+          <label class="label-back-sign-in">
+            <a href="../VerificationCode/Index.html">Back</a>
+          </label>
+
+        <button id="btnSend" type="button" class="btn-send">Reset Password</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
