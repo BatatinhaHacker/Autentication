@@ -11,9 +11,13 @@ const lockIcon = document.querySelector(".lock-icon");
 const btnRegister = document.querySelector(".btn-register");
 
 function validateForm() {
-    console.log("inputUsername:", inputUsername.value);
-    console.log("inputEmail:", inputEmail.value);
-    console.log("inputPassword:", inputPassword.value);
+    const formData = new FormData(formRegister);
+    const data = {};
+  
+    for (const [key, value] of formData.entries()) {
+        data[key] = value;
+    }
+    console.log(data)
 }
 
 function hideUsernameImage() {

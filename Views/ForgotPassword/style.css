@@ -5,7 +5,7 @@
 }
 
 body {
-    margin:0;    
+    margin:0;
 }
 
 #backgroundDiv {
@@ -94,7 +94,7 @@ background: #9FBBFB;
 .login-title {
     position: absolute;
     top: 27%;
-    left: 35%;
+    left: 37%;
     color: #5C5C78;
     font-size: 1.5em;
     font-weight: 400;
@@ -137,11 +137,30 @@ background: #9FBBFB;
 
 .input::placeholder {
     font-size: medium;
-    padding: 35px;
+    padding: 30px;
     color: #C4C8D2;
 }
 
-.btn-register {
+.div-container {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-back-sign-in {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.label-back-sign-in > a {
+    color: #9FB3FD;
+}
+
+.btn-send {
     width: 100%;
     height: 30%;
     font-weight: 400;
@@ -153,58 +172,28 @@ background: #9FBBFB;
     margin-bottom: 7.5%;
 }
 
-.btn-register:hover {
+.btn-send:hover {
     background-color: #4168F9;
 }
 
 .div-title {
     position: absolute;
     left: 10%;
-    top: 12%;
-    width: 90%;
+    top: 14%;
+    width: 60%;
 }
 
 .title {
-    font-family: 'Oswald';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 6em;
     line-height: 104px;
     
     color: #FFFFFF;
 }
 
-.login-username > img {
-    position: absolute;
-    left: 3%;
-    top: 16.5%;
-}
-
 .login-email > img {
     position: absolute;
-    left: 2.5%;
-    top: 55%;
-}
-
-.login-password > img {
-    position: absolute;
-    left: 3%;
-    top: 92%;
-}
-
-.label-sign-in {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-size: 1.1em;
-}
-
-.label-sign-in span {
-    color: #474866;
-}
-
-.label-sign-in a {
-    color: #9FB3FD;
+    top: 17%;
+    left: 2%;
 }

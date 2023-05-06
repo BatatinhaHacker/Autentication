@@ -10,9 +10,13 @@ const lockIcon = document.querySelector(".lock-icon");
 const btnLogin = document.querySelector(".btn-continue");
 
 function validateForm() {
-    console.log("inputEmail:", inputEmail.value);
-    console.log("inputPassword:", inputPassword.value);
-    console.log("inputCheckbox:", inputCheckbox.checked);
+    const formData = new FormData(formLogin);
+    const data = {};
+  
+    for (const [key, value] of formData.entries()) {
+        data[key] = value;
+    }
+    console.log(data)
 }
 
 function hideEmailImage() {
@@ -50,3 +54,8 @@ inputEmail.addEventListener('focusout', showEmailImage);
 inputPassword.addEventListener('focus', hidePasswordImage);
 
 inputPassword.addEventListener('focusout', showPasswordImage);
+
+
+btnLogin.addEventListener('click', () => {
+    location.replace("../Register/Index.html");
+});
