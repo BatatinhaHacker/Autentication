@@ -1,3 +1,5 @@
+import data from '../../mockData.js'
+
 const formRegister = document.querySelectorAll("#formRegister");
 
 const inputUsername = document.querySelector(".input-username");
@@ -10,14 +12,30 @@ const lockIcon = document.querySelector(".lock-icon");
 
 const btnRegister = document.querySelector(".btn-register");
 
-function validateForm() {
-    const formData = new FormData(formRegister);
-    const data = {};
-  
-    for (const [key, value] of formData.entries()) {
-        data[key] = value;
+function validateForm(e) {
+    e.preventDefault();
+
+    let username = inputUsername.value
+    let email = inputEmail.value
+    let password = inputPassword.value
+    let matchFound = false;
+
+    for (let i = 0; i < data.length; i++) {
+        if (email === data[i].email && username === data[i].username) {
+            matchFound = true;
+            alert("Email already used");
+            return;
+        }
     }
-    console.log(data)
+
+    if (!matchFound) {
+        let newUser = {"id": "", "username": username, "email": email, "password": password}
+        data.push(newUser)
+        alert('Account created successfully');
+        location.href = '../Login/Index.html'
+    }
+
+
 }
 
 function hideUsernameImage() {
@@ -26,7 +44,7 @@ function hideUsernameImage() {
 }
 
 function showUsernameImage() {
-    if(inputUsername.value != '') {
+    if (inputUsername.value != '') {
         return;
     }
     userIcon.style.display = 'block';
@@ -39,7 +57,7 @@ function hideEmailImage() {
 }
 
 function showEmailImage() {
-    if(inputEmail.value != '') {
+    if (inputEmail.value != '') {
         return;
     }
     envelopeIcon.style.display = 'block';
@@ -52,14 +70,12 @@ function hidePasswordImage() {
 }
 
 function showPasswordImage() {
-    if(inputPassword.value != '') {
+    if (inputPassword.value != '') {
         return;
     }
     lockIcon.style.display = 'block';
     inputPassword.setAttribute('placeholder', 'Enter your password');
 }
-
-btnRegister.addEventListener('click', validateForm);
 
 inputEmail.addEventListener('focus', hideEmailImage);
 
@@ -72,3 +88,5 @@ inputPassword.addEventListener('focusout', showPasswordImage);
 inputUsername.addEventListener('focus', hideUsernameImage);
 
 inputUsername.addEventListener('focusout', showUsernameImage);
+
+btnRegister.addEventListener('click', validateForm);
